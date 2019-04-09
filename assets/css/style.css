@@ -1,0 +1,135 @@
+
+body {
+	background-color: #000;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+h1 {
+	color: white;
+	margin-left: 20px;	
+	margin-top: 50px;
+	font-size: 40px;
+	text-align: center;
+}
+
+header {
+	background-color: #000;
+	/*margin-bottom: -20px;*/
+	border-bottom: 2px solid grey;
+}
+
+/* logo section */
+img {
+	height: 40px;
+	width: 125px;
+}
+
+.giffyMusicLogoText{
+	font-size: 50px;
+	color:#fff;
+}
+
+/* this changes the styling of the buttons */
+
+.btn{
+	border:  1px solid red;
+}
+
+/* this is the main button style */
+.btn-style {
+	background-color:#000;
+	color:#fff;
+	font-size:25px;
+	border:  1px solid red;
+	border-radius:10px;
+	padding:5px 20px;
+}
+
+.btn-style:hover {
+	color: #fff;
+	background-color:#000;
+}
+
+
+.divider {
+	border:  1px solid red;	
+}
+
+nav { 
+	height: 92px;
+ }
+
+ label {
+ 	font-size: 20px;
+ 	font-weight: bolder;
+ }
+
+ input {
+ 	color: white;
+
+ }
+
+button {
+	margin-top: 8px;
+	padding-right: 10px;
+	text-align: center;
+
+}
+
+.headerImage {
+	height: 140px;
+	width: 300px;
+	/*margin-left: 40px;*/
+	/*transition: all .5s linear;
+	margin-left: 80px;*/
+
+}
+
+@keyframes myanimation
+{
+    0%, 50% {
+        margin-left: -500px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+#image {
+	animation: myanimation 2000ms ease; 
+}
+
+.rate {
+	text-transform: uppercase;
+}
+
+.container {
+	width: 80%;
+}
+
+
+
+
+
+ 
+/* This is the css to style the Logo image  */
+
+
+
+@media only screen and (max-width: 600px) {
+	
+	img {
+		height: 50px;
+		width: 100px;
+	}
+	.giffyMusicLogoText{
+		font-size: 40px;
+		color:#fff;
+	}
+
+	header {
+		text-align:center
+	}
+
+  }

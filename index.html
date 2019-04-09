@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Louis Carter">
+    <title>Lou's Giphy Music</title>
+    <!--Css reset style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Bootstrap css -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" crossorigin="anonymous">
+    <!-- Your style sheet link -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Font awesome CDN -->
+    <script src="https://use.fontawesome.com/9763ef17ba.js"></script>
+</head>
+
+<body>
+
+<!-- Start of Html -->
+<header>
+<div class="container-fluid">
+        <div class="row">
+
+            <!-- this is the logo section -->
+                <div class="col-sm-6  col-md-7 left"> 
+            <span class="giffyMusicLogoText">Lou's</span>  
+            <img src="/assets/images/musicLogo.png" class="img-fluid logo-brand" alt="Responsive image">
+            <span class="giffyMusicLogoText">Giffy</span>
+            </div><!-- ennd of the  image logo -->
+            
+            <!-- this is the search section  -->
+
+            <div class="col-sm-6 col-md-5 middle">
+                    <label for="star-input">Choose Your Star</label>
+                    <input type="text" id="star-input">  
+                    
+                         <!-- Button triggers new movie to be added -->
+ <button class="btn-style" id="addStar" type="button" value="Add Your Celebrity">Add A Star</button>
+            </div>
+
+
+        </div><!-- end of the container row -->
+
+    </div><!-- end of the container -->
+
+    <div class="container-fluid">
+
+        <div class="row" id="buttonsView">
+            </div>
+             <!-- A divider above the imagess-->
+            <div class="divider"></div>
+        </div>
+
+
+    </div>
+</header>
+<!-- Button container -->
+    <div class="container">
+   <!-- WHERE THE IMAGES WILL RENDER -->
+  <div class="row bodyPic" id="gifsAppearHere">
+      <!-- Coded this section mostly in js -->
+    </div>
+
+<!-- ===========END OF HTML CONTENT =================== -->
+
+      <script type="text/template" id="giphyTmpl">
+            <div class="col s12 m4 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="<%= result.images.fixed_height_small_still.url %>" data-still="<%= result.images.fixed_height_small_still.url %>" data-animate="<%= result.images.fixed_height_small.url %>" data-state="still">
+                    </div>
+                    <div class="card-content"><p class="rate"> Rating: <%= result.rating %></p>
+                    </div>
+                </div>
+            </div>
+    </script>
+
+<!-- need to add additinal sripts here to allow the users to select any additional gif that they chose to use -->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScrip for Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+    <!-- underscore JS library CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+    <!-- link to user JS file. -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+    </script>
+
+</body>
+
+</html>
