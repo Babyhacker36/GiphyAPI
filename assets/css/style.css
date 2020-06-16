@@ -109,7 +109,27 @@ button {
 }
 
 
+/* card images  */
+.card {
+	width: 300px;
+	height: auto;
+}
 
+.card-image {
+	width: 100%;
+}
+
+.card-content {
+	background-color: #000;
+	color: #fff;
+}
+
+/* top row  */
+
+#buttonsView {
+	position: relative;
+	left: 0%
+}
 
 
  
